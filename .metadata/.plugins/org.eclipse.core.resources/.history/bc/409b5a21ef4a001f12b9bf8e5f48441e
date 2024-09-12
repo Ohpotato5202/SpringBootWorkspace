@@ -1,0 +1,8 @@
+package com.kh.menu.model.typehandler;
+
+import org.apache.ibatis.type.MappedTypes;
+
+@MappedTypes(value = {MenuType.class , MenuTaste.class})
+public class MenuTypeHandler {
+
+}

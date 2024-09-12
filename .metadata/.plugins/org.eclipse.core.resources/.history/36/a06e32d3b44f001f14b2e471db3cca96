@@ -1,0 +1,10 @@
+package com.kh.api.auth.model.dao;
+
+public class AuthDao {
+
+	public void loadUserByUsername(Long socialId, String string) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

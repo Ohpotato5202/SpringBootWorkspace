@@ -1,0 +1,16 @@
+package com.kh.menu.model.servaice;
+
+import java.util.List;
+import java.util.Map;
+
+import com.kh.menu.model.vo.Menu;
+
+public interface MenuService {
+
+	List<Menu> selectMenus();
+
+	int insertMenu(Menu menu);
+
+	List<Menu> selectMenuList(Map<String, Object> param);
+
+}

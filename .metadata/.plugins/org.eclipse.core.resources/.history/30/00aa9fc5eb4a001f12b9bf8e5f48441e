@@ -1,0 +1,10 @@
+package com.kh.menu.model.vo;
+
+public class Menu {
+	private int id;
+	private String restaurant;
+	private String name;
+	private int price;
+	private MenuType type; //Kr, ch, jp
+	private MenuTaste taste; //mild,hot
+}

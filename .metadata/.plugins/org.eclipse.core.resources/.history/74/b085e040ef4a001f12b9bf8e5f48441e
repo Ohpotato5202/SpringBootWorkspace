@@ -1,0 +1,15 @@
+package com.kh.menu.model.typehandler;
+
+import org.apache.ibatis.type.BaseTypeHandler;
+import org.apache.ibatis.type.JdbcType;
+import org.apache.ibatis.type.MappedJdbcTypes;
+import org.apache.ibatis.type.MappedTypes;
+
+import com.kh.menu.model.vo.MenuTaste;
+import com.kh.menu.model.vo.MenuType;
+
+@MappedTypes(value = {MenuType.class , MenuTaste.class})
+@MappedJdbcTypes(JdbcType.VARCHAR) //db자료형
+public class MenuTypeHandler extends BaseTypeHandler<MenuType>{
+
+}

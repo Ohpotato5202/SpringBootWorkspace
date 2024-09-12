@@ -1,0 +1,13 @@
+package com.kh.api.auth.model.dto;
+
+public class KakaoUserInfoResponse {
+	private Long id;
+	private Boolean has_signed_up;
+	
+	private KakaoAccount kakao_account;
+	private Properties properties;
+	
+	public static class KakaoAccount {
+		
+	}
+}

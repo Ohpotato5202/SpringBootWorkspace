@@ -1,0 +1,5 @@
+package com.kh.chatApp.config;
+
+public class WebMvcConfig {
+
+}

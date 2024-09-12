@@ -1,0 +1,25 @@
+package com.kh.api.auth.model.dao;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.mybatis.spring.SqlSessionTemplate;
+import org.springframework.stereotype.Repository;
+
+import lombok.RequiredArgsConstructor;
+
+@Repository
+@RequiredArgsConstructor
+public class AuthDao {
+
+	private final SqlSessionTemplate session;
+	
+	public void loadUserByUsername(Long socialId, String string) {
+		Map<String, String> param = new HashMap<>();
+		param.put("socialId", socialId);
+		param.put("socialType",socialType);
+		return session.selectOne("auth.loadUserByUsername", string);
+		
+	}
+
+}

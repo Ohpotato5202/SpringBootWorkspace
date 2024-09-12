@@ -1,0 +1,30 @@
+package com.kh.api.auth.model.service;
+
+import org.springframework.stereotype.Service;
+
+import com.kh.api.auth.model.dao.AuthDao;
+import com.kh.api.auth.model.dto.KakaoUserInfoResponse;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+   @Service
+   @RequiredArgsConstructor
+   @Slf4j
+public class AuthService {
+
+   private final KakaoApi kakaoApi;
+   private final AuthDao dao;
+   
+      
+   public void login(String accessToken) {
+      // 카카오 서버에 유저 데이터 요청
+      KakaoUserInfoResponse userInfo = kakaoApi.getUserInfo(accessToken);
+      log.info("userInfo ?? {}", userInfo);
+      
+      Long socialId = userInfo.getId();
+      
+      // 어플리케이션에 사용자 정보가 있는지 조회.
+      dao.loadUserByUsername(socialId, "kakao");
+   }
+
+}

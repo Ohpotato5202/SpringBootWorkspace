@@ -1,0 +1,18 @@
+package com.kh.api.auth.model.service;
+
+import org.springframework.stereotype.Component;
+
+import com.kh.api.auth.model.dto.KakaoUserInfoResponse;
+
+import lombok.RequiredArgsConstructor;
+
+@Component
+@RequiredArgsConstructor
+public class KakaoApi {
+
+   public KakaoUserInfoResponse getUserInfo(String accessToken) {
+      
+      
+   }
+
+}

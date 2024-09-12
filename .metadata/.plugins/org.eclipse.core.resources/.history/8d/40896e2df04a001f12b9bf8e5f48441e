@@ -1,0 +1,14 @@
+package com.kh.menu.model.vo;
+
+import lombok.Getter;
+
+@Getter
+public enum MenuType {
+	KR("kr") , CH("ch") , JP("jp");
+	
+	private String value;
+	MenuType(String value){
+		this. value = value;
+	}
+	
+}

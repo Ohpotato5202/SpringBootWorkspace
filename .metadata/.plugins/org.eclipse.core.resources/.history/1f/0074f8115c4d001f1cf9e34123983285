@@ -1,0 +1,12 @@
+package com.kh.chatApp.chat.model.vo;
+
+import lombok.Data;
+
+@Data
+@
+public class ChatRoom {
+	private int chatRoomNo;
+	private String title;
+	private String stattus;
+	private int userNo;
+}

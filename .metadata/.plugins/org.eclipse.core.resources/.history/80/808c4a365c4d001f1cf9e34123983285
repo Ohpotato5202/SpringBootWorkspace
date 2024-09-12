@@ -1,0 +1,5 @@
+package com.kh.chatApp.chat.controller;
+
+public class ChatController {
+
+}

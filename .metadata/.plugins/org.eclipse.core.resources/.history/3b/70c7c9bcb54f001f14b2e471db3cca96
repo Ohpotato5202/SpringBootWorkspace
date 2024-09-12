@@ -1,0 +1,5 @@
+package com.kh.api.auth.model.dto;
+
+public class User {
+
+}

@@ -1,0 +1,17 @@
+package com.kh.menu.model.servaice;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.kh.menu.model.vo.Menu;
+
+@Service
+public class MenuServiceImpl implements MenuService{
+
+	@Override
+	public List<Menu> selectMenus() {
+		return null;
+	}
+
+}

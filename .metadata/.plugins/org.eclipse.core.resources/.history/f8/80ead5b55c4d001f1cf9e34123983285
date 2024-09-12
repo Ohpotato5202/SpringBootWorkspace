@@ -1,0 +1,8 @@
+package com.kh.chatApp.chat.websocket;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class StompConfig {
+
+}

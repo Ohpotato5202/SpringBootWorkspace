@@ -1,0 +1,9 @@
+package com.kh.chatApp.chat.model.vo;
+
+public class ChatRoomJoin {
+	
+	private int userNo;
+	private int chatRoomNo;
+	private int userStatus;
+
+}

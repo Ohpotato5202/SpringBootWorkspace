@@ -1,0 +1,3 @@
+spring.application.name=menuRestApi
+
+server.port=8082

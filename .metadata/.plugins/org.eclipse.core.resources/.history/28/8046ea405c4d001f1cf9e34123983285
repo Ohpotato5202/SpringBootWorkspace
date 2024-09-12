@@ -1,0 +1,12 @@
+package com.kh.chatApp.chat.model.vo;
+
+
+
+public class ChatMessage {
+
+	private int cmNo;
+	private String message;
+	private String createDate;
+	private int chatRoomNo;
+	private int userNo;
+}

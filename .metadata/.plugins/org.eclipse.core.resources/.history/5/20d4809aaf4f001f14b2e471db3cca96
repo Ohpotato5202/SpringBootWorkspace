@@ -1,0 +1,13 @@
+package com.kh.api.auth.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+public class WebClientConfig {
+	
+	@Bean
+	public ReactorResourceFactory resourceFactory() {
+		
+	}
+
+}

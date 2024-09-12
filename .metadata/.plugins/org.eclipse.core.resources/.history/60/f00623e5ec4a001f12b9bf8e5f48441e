@@ -1,0 +1,23 @@
+package com.kh.menu.model.servaice;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.kh.menu.model.dao.MenuDao;
+import com.kh.menu.model.vo.Menu;
+
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+@Service
+public class MenuServiceImpl implements MenuService{
+
+	private final MenuDao menuDao;
+	
+	@Override
+	public List<Menu> selectMenus() {
+		return menuDa.selectMenus;
+	}
+
+}

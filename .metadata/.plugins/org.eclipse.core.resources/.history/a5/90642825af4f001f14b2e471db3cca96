@@ -1,0 +1,25 @@
+package com.kh.api.auth.model.service;
+
+import org.springframework.stereotype.Service;
+
+import com.kh.api.auth.model.dao.AutDao;
+
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+
+@Service
+@RequiredArgsConstructor
+@Slf4j
+public class AuthSevice {
+	
+	private final KakaoApi kakaoApi;
+	private final AutDao dao;
+	
+	public void login(String accessToken) {
+		// 카카오 서버에 유저 데이터 요청
+		KakaoUserInfoResponse getUserInfo(String accessToken) {
+			
+		}
+	}
+
+}

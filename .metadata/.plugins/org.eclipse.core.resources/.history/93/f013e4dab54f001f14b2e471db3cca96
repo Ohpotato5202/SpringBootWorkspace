@@ -1,0 +1,12 @@
+package com.kh.api.auth.model.dto;
+
+public class User {
+	
+	private long userNo;
+	private String nickname;
+	private String enrollDate;
+	private String profile;
+	
+	private String socialId;
+
+}
